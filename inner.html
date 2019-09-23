@@ -20,20 +20,41 @@
   </header>
   <main>
     <section>
+      <h1 class="visually-hidden">Поиск гостиницы в Седоне </h1>
       <p>Инфраструктура:</p>
       <ul>
-        <li>Бассейн</li>
-        <li>Парковка</li>
-        <li>Wi-Fi</li>
+        <li>
+          <input type="checkbox" name="swimmingpool" id="swimmingpool" checked>
+          <label for="swimmingpool">Бассейн</label>
+        </li>
+        <li>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">Парковка</label>
+        </li>
+        <li>
+          <input type="checkbox" name="wifi" id="wifi">
+          <label for="wifi">Wi-Fi</label>
+        </li>
       </ul>
       <p>Тип жилья:</p>
       <ul>
-        <li>Гостиница</li>
-        <li>Мотель</li>
-        <li>Апартаменты</li>
+        <li>
+          <input type="checkbox" name="hotel" id="hotel" checked>
+          <label for="hotel">Гостиница</label>
+        </li>
+        <li>
+          <input type="checkbox" name="motel" id="motel" checked>
+          <label for="motel">Мотель</label>
+        </li>
+        <li>
+          <input type="checkbox" name="apart" id="apart" checked>
+          <label for="apart">Апартаменты</label>
+        </li>
       </ul>
       <h3>Стоимость в сутки (₽):</h3>
-      <!--Здесь будет форма-->
+      <p>от 0</p>
+      <p>до 3000</p>
+      <input type="range">
       <button type="button">Показать</button>
     </section>
     <section>
@@ -50,52 +71,71 @@
     </section>
     <section>
       <div>
-        <img src="img/hotel-picture.jpg" width="135" height="90" alt="hotel">
+        <img src="img/hotel-picture.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
         <h3>Amara Resort & Spa</h3>
         <p>Гостиница</p>
         <p>от 4000 ₽</p>
         <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <button type="button">Забронировать</button>
         <!--Здесь будут звезды-->
-        <p></p>
         <p>Рейтинг: 8,5</p>
       </div>
       <div>
-        <img src="img/hotel-picture2.jpg" width="135" height="90" alt="hotel2">
+        <img src="img/hotel-picture2.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
         <h3>Desert Quail Inn</h3>
         <p>Мотель</p>
         <p>от 3000 ₽</p>
         <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <button type="button">Забронировать</button>
         <!--Здесь будут звезды-->
-        <p></p>
         <p>Рейтинг: 8,9</p>
       </div>
       <div>
-        <img src="img/hotel-picture3.jpg" width="135" height="90" alt="hotel3">
+        <img src="img/hotel-picture3.jpg" width="135" height="90" alt="Фото апартаментов Villa at Poco Diablo">
         <h3>Villa at Poco Diablo</h3>
         <p>Апартаменты</p>
         <p>от 2000 ₽</p>
         <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <button type="button">Забронировать</button>
         <!--Здесь будут звезды-->
-        <p></p>
         <p>Рейтинг: 9,5</p>
       </div>
     </section>
   </main>
+  <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
   <section>
     <p>Заинтересовались?</p>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <!--Здесь будет форма-->
   </section>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Поиск гостиницы в Седоне</legend>
+      <p>
+        <label for="appointment-date">Дата заезда:</label>
+        <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+      </p>
+      <p>
+        <label for="appointment-date2">Дата выезда:</label>
+        <input id="appointment-date2" type="text" name="date" value="" placeholder="4 июля 2017">
+      </p>
+      <p>
+        <label for="adults-number">Взрослые:</label>
+        <input id="adults-number" type="number" name="adults" value="" placeholder="2">
+      </p>
+      <p>
+        <label for="kids-number">Дети:</label>
+        <input id="kids-number" type="number" name="kids" value="" placeholder="0">
+      </p>
+    </fieldset>
+    <button type="submit">Найти</button>
+  </form>
   <footer>
     <p>#VISITSEDONA</p>
     <a href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter"></a>
     <a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="fb"></a>
     <a href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a>
     <p>Website by</p>
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="46" height="48" alt="logo-htmlacademy"></a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="46" height="48" alt="Логотип HTML Academy"></a>
   </footer>
 </body>
 
