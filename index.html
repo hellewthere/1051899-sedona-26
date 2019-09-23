@@ -19,46 +19,48 @@
     </nav>
   </header>
   <main>
+    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
     <section>
-      <img src="img/intro-welcome.svg" width="459" height="353" alt="welcome">
+      <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona!">
     </section>
+    <h2 class="visually-hidden">Преимущества</h2>
     <section>
-      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
     <section>
       <div>
         <ul>
           <li>Настоящий городок</li>
-          <li>№1</li>
+          <li>- №1 -</li>
           <li>Cедона - не аттракцион для туристов, там течет своя жизнь</li>
         </ul>
       </div>
-      <img src="img/feature-picture-1.jpg" width="800" height="401" alt="feature1">
+      <img src="img/feature-picture-1.jpg" width="800" height="401" alt="Вид на город">
     </section>
     <section>
-      <img src="img/icon-1.svg" width="75" height="72" alt="icon1">
+      <img src="img/icon-1.svg" width="75" height="72" alt="Иконка-дом">
       <ul>
         <li>Жилье</li>
         <li>Рекомендуем пожить в настоящем мотеле, все как в кино!</li>
       </ul>
-      <img src="img/icon-3.svg" width="75" height="72" alt="icon3">
+      <img src="img/icon-3.svg" width="75" height="72" alt="Иконка-бургер">
       <ul>
         <li>Еда</li>
         <li>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</li>
       </ul>
-      <img src="img/icon-2.svg" width="75" height="72" alt="icon2">
+      <img src="img/icon-2.svg" width="75" height="72" alt="Иконка-подарок">
       <ul>
         <li>Сувениры</li>
         <li>Не только китайского, но и местного производства!</li>
       </ul>
     </section>
     <section>
-      <img src="img/feature-picture-2.jpg" width="800" height="400" alt="feature-picture2">
+      <img src="img/feature-picture-2.jpg" width="800" height="400" alt="Вид на мост дьявола<">
       <div>
         <ul>
           <li>Там есть мост дьявола</li>
-          <li>№2</li>
+          <li>- №2 -</li>
           <li>Да, по нему можно пройти! Если, конечно, вы осмелитесь</li>
         </ul>
       </div>
@@ -66,32 +68,56 @@
     <section>
       <ul>
         <li>Небольшая площадь</li>
-        <li>№3</li>
+        <li>- №3 -</li>
         <li>Все достопримечательности находятся очень близко</li>
       </ul>
       <ul>
         <li>Красивая дорога</li>
-        <li>№4</li>
+        <li>- №4 -</li>
         <li>Ехать в Седону из Лас-Вегаса совсем не скучно!</li>
       </ul>
       <ul>
         <li>Мало туристов</li>
-        <li>№5</li>
+        <li>- №5 -</li>
         <li>Большинство едет в Гранд Каньон и толпится там</li>
       </ul>
     </section>
   </main>
+  <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
   <section>
     <p>Заинтересовались?</p>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <!--Здесь будет форма-->
   </section>
+  <form action="inner.html" method="post">
+    <fieldset>
+      <legend>Поиск гостиницы в Седоне</legend>
+      <p>
+        <label for="appointment-date">Дата заезда:</label>
+        <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+      </p>
+      <p>
+        <label for="appointment-date2">Дата выезда:</label>
+        <input id="appointment-date2" type="text" name="date" value="" placeholder="4 июля 2017">
+      </p>
+      <p>
+        <label for="adults-number">Взрослые:</label>
+        <input id="adults-number" type="number" name="adults" value="" placeholder="2">
+      </p>
+      <p>
+        <label for="kids-number">Дети:</label>
+        <input id="kids-number" type="number" name="kids" value="" placeholder="0">
+      </p>
+    </fieldset>
+    <button type="submit">Найти</button>
+  </form>
   <footer>
     <p>#VISITSEDONA</p>
-    <a href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter"></a>
-    <a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="fb"></a>
-    <a href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a>
-    <a href="#"><img src="img/logo-htmlacademy.svg" width="46" height="48" alt="logo-htmlacademy"></a>
+    <a href="#"><img src="img/twitter.svg" width="46" height="48" alt="Седона в Twitter"></a>
+    <a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="Седона в Facebook"></a>
+    <a href="#"><img src="img/youtube.svg" width="46" height="48" alt="Седона в Youtube"></a>
+    <p>Website by</p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="46" height="48" alt="Логотип HTML Academy"></a>
   </footer>
 </body>
+
 </html>
