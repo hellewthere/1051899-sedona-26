@@ -4,7 +4,7 @@ body {
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
+  
   line-height: 24px;
   font-weight: bold;
   color: #000000;
@@ -154,17 +154,24 @@ a {
 }
 
 .first-description {
+   
+  justify-content: center;
 
+  flex-direction: column;
+   
   background-color: #81b3d2;
 
   position: relative;
+width: 400px;
 
   display: flex;
   margin-right: auto;
   overflow: hidden;
 }
 
+/*
 .list-first {
+
   list-style: none;
   width: 400px;
   margin: auto;
@@ -173,6 +180,7 @@ a {
   color: #fff;
 
 }
+*/
 
 .reason-first {
   display: flex;
@@ -189,6 +197,8 @@ a {
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
+
+
 }
 
 .number {
@@ -202,6 +212,19 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+
+  justify-content: center;
+
+  flex-direction: column;
+   
+  
+
+  position: relative;
+
+
+  display: flex;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 .text {
@@ -219,7 +242,7 @@ a {
 }
 
 .view-first {
-  height: inherit;
+  
   margin-left: auto;
   width: 800px;
 
@@ -298,17 +321,17 @@ a {
 
 .habitation .paragraph-rec {
   width: 252px;
-  height: 34px;
+  
 }
 
 .food .paragraph-rec {
   width: 284px;
-  height: 35px;
+  
 }
 
 .souvenirs .paragraph-rec {
   width: 273px;
-  height: 36px;
+  
 
 }
 
