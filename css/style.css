@@ -156,7 +156,7 @@ a {
 .first-description {
    
   justify-content: center;
-
+align-items: center;
   flex-direction: column;
    
   background-color: #81b3d2;
