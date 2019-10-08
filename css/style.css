@@ -151,6 +151,8 @@ a {
   margin-bottom: 56px;
   color: #333333;
   font-weight: normal;
+
+  align-items: center;
 }
 
 .first-description {
@@ -223,7 +225,7 @@ width: 400px;
 
 
   display: flex;
-  margin-right: auto;
+ 
   overflow: hidden;
 }
 
@@ -242,8 +244,8 @@ width: 400px;
 }
 
 .view-first {
-  
-  margin-left: auto;
+  padding: 0;
+  margin: auto;
   width: 800px;
 
 }
@@ -251,8 +253,6 @@ width: 400px;
 .recommendations {
   background-color: #ffffff;
   margin: auto;
-
-
 }
 
 .rec-list {
