@@ -14,24 +14,24 @@
 <div class="main-block">
     <header class="navigation-block">
       <nav class="navigation">
-        <a><img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"></a>
+        <a class="logo" href="index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"></a>
         <ul class="navigation-buttons">
           <li> <a class="navigation-button" href="#">Информация</a></li>
           <li> <a class="navigation-button" href="#">Фото и видео</a></li>
           <li> <a class="navigation-button" href="#">Карта штата</a></li>
-          <li> <a class="navigation-button" href="inner.html">Гостиницы</a></li>
+          <li> <a class="navigation-button">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
   <main>
-    <h1 class="visually-hidden">Поиск гостиницы в Седоне
-      <form action="#" method="post">
-    </h1>
-    <fieldset>
-      <p>Инфраструктура:</p>
-      <ul>
-        <li>
+    <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+      <form class="inner-form" action="#" method="post">
+    
+    <fieldset class="fieldset">
+      <ul class="infrastructure">
+      <li>Инфраструктура:</li>
+      <li>
           <input type="checkbox" name="swimmingpool" id="swimmingpool" checked>
           <label for="swimmingpool">Бассейн</label>
         </li>
@@ -44,10 +44,11 @@
           <label for="wifi">Wi-Fi</label>
         </li>
       </ul>
-    </fieldset>
-    <fieldset>
-      <p>Тип жилья:</p>
-      <ul>
+    
+      <ul class="housing">
+        
+        <li>Тип жилья:</li>
+      
         <li>
           <input type="checkbox" name="hotel" id="hotel" checked>
           <label for="hotel">Гостиница</label>
@@ -61,13 +62,18 @@
           <label for="apart">Апартаменты</label>
         </li>
       </ul>
-    </fieldset>
-    <fieldset>
-      <h3>Стоимость в сутки (₽):</h3>
-      <p>от 0</p>
-      <p>до 3000</p>
+    
+      <ul class="cost">
+      <li>Стоимость в сутки (₽):</li>
+      <table>
+      <tr>
+      <th>от 0</th>
+      <th>до 3000</th>
+    </tr>
+  </table>
       <input type="range">
       <button class="form-button" type="button">Показать</button>
+     </ul>
     </fieldset>
     </form>
     <section>
