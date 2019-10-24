@@ -238,17 +238,16 @@ margin-right: 63px;
   padding: 0;
 }
 
-.house-icon {
-  background-image: url(../img/icon-1.svg);
-
+.habitation::before {
+  content: url(../img/icon-1.svg);
 }
 
-.burger-icon {
-  background-image: url(../img/icon-2.svg);
+.food::before {
+  content: url(../img/icon-2.svg);
 }
 
-.gift-icon {
-  background-image: url(../img/icon-3.svg);
+.souvenirs::before {
+  content: url(../img/icon-3.svg);
 }
 
 
