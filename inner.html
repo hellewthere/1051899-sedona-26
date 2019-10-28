@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CGoogle+Sans" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<base href="https://htmlacademy-htmlcss.github.io/1051899-sedona-26/5/">
@@ -40,7 +40,7 @@
 						<li class="filter-option">
 							<input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking">
 							<label for="parking">
-								Парковка
+							Парковка
 							</label>
 						</li>
 						<li class="filter-option">
@@ -90,7 +90,7 @@
 				</div>
 			</form>
 		</section>
-		<div class="results">
+		<section class="results">
 			<div class="found">
 				<p>Найдено: 3</p>
 			</div>
@@ -108,7 +108,7 @@
 					<span class="visually-hidden">Стрелка вниз</span>
 				</a>
 			</div>
-		</div>
+		</section>
 		<ul class="catalog">
 			<li class="catalog-item">
 				<div class="item-img">
@@ -126,19 +126,19 @@
 					</div>
 				</div>
 				<div class="stars">
-					<div class="amara-stars">
+					<div class="stars amara">
 						<span class="visually-hidden">Рейтинг отеля</span>
 					</div>
 					<span class="rating">Рейтинг: 8,5</span>
 				</div>
 			</li>
 			<li class="catalog-item">
-				<a class="item-img">
+				<div class="item-img">
 					<img src="img/hotel-picture2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-				</a>
+				</div>
 				<div class="item-detail">
 					<h2 class="name-hotel">Desert Quail Inn</h2>
-					<div class="catalog-type"></div>
+					<div class="catalog-type">
 					<span>Мотель</span>
 					<span>от 3000 ₽</span>
 				</div>
@@ -146,8 +146,9 @@
 					<a class="button-detail" href="#">Подробнее</a>
 					<a class="button-booking" href="#">Забронировать</a>
 				</div>
+				</div>
 				<div class="stars">
-					<div class="desert-stars">
+					<div class="stars desert">
 						<span class="visually-hidden">Рейтинг отеля</span>
 					</div>
 					<span class="rating">Рейтинг: 8,9</span>
@@ -157,18 +158,21 @@
 				<div class="item-img">
 					<img src="img/hotel-picture3.jpg" width="135" height="90" alt="Апартаменты Villa at Poco Diablo">
 				</div>
+				<div class="item-detail">
 				<h2 class="name-hotel">Villa at Poco Diablo</h2>
 				<div class="catalog-type">
 					<span>Апартаменты</span>
 					<span>от 2000 ₽</span>
 				</div>
+				
 				<div class="catalog-price">
-					<a class="botton-detail" href="#">Подробнее</a>
+					<a class="button-detail" href="#">Подробнее</a>
 					<a class="button-booking" href="#">Забронировать</a>
 				</div>
+			</div>
 				<div class="stars">
-					<div class="villas-stars">
-						<span class="visually-hidden">Оценка отеля</span>
+					<div class="stars villa">
+						<span class="visually-hidden">Рейтинг отеля</span>
 					</div>
 					<span class="rating">Рейтинг: 9,5</span>
 				</div>
