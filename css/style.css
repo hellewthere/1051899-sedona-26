@@ -37,6 +37,7 @@ a {
   width: 1200px;
 
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  position: relative;
 }
 
 .visually-hidden {
@@ -398,7 +399,7 @@ overflow: hidden;
 
 .search-paragraph {
   max-width: 434px;
-  max-height: 96px;
+ 
   text-align: center;
   align-items: center;
  
@@ -409,6 +410,7 @@ overflow: hidden;
   
 }
 .search-button {
+  margin: auto;
   align-items: center;
   width: 568px;
 
@@ -417,10 +419,15 @@ padding: 30px 138px;
 display: flex;
 }
 
+.form {
+  margin: auto;
+}
+
 .search-form{
+  margin: auto;
+  position: absolute;
 background-color: #ffffff;
 width: 568px;
-min-height: 395px;
 box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 margin-left: auto;
 margin-right: auto;
@@ -433,45 +440,25 @@ text-align: center;
   font-weight: bold;
   line-height: 1.86;
   text-align: left;
-  margin-left: 21px;
-}
-
-.search-item {
-  position: relative;
-}
-
-.search-item-date {
-  padding-bottom: 18px;
   
 }
 
+
+.search-item-date {
+  
+  padding: 0px 0px 18px;
+  margin: 14px 55px 0px 55px;
+  color: #000000;
+}
+
 .search-item-date input {
-  margin-left: 16px;
   width: 346px;
-}
-
-.search-item input {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 6px 30px 6px 14px;
-  min-height: 35px;
-  border: 0;
-  color: #000;
-  text-transform: uppercase;
-  font: inherit;
-}
-
-.date input {
-  width: 346px;
-  height: 38px;
+  margin: 0px 0px 0px 16px;
   background-color: #f2f2f2;
-
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.86;
-  text-align: left;
 }
-
+ 
+ 
 .title-search{
 color: #ffffff;
   font-size: 21px;
@@ -481,11 +468,15 @@ color: #ffffff;
 
 }
 
+.age {
+  display: flex;
+}
 
 .age input {
   width: 38px;
   height: 38px;
   
+ 
   font-size: 14px;
   font-weight: bold;
   line-height: 1.86;
@@ -493,9 +484,11 @@ color: #ffffff;
 }
 
 .adult-kids {
+  margin-left: 55px;
+  margin-right: 55px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .question {
@@ -542,7 +535,7 @@ padding: 5px 0px;
 .operator {
 padding-bottom: 0;
     width: 38px;
-    height: 36px;
+    height: 38px;
     border: 0;
     background-color: #f2f2f2;
     color: #a9a9a9;
@@ -559,15 +552,31 @@ padding-bottom: 0;
   }
 */
   .blue-button {
-  margin: 40px 0px 0px;
-  padding: 15px 0px 16px;
+  margin: 54px 55px 55px 55px;
+  
   background-color: #81b3d2;
+  width: 458px;
+  height: 58px;
+  
+
+  }
+
+  .blue-button-text {
+    
+    font-size: 21px;
+    font-weight: bold;
+    
+    line-height: 1.24;
+    margin: auto; 
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 
   .map {
    
     
-    position: relative; 
+    position: absolute; 
     background-position: top center;
     background-repeat: no-repeat;
      
@@ -579,25 +588,19 @@ padding-bottom: 0;
 
 
   .page-footer {
+    position: absolute;
     display: block;
     
     bottom: 0;
-     
-
     padding-top: 35px;
     padding-bottom: 41px;
     background: rgba(255,255,255, 0.9);
-    
-     
-    box-shadow: none;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
     
   }
 
   .footer-container {
-     
-    
     box-shadow: none;
-
     display: inline-flex;
     list-style: none;
     justify-content: center;
@@ -704,6 +707,10 @@ height: 48px;
 
 
 /* inner.html styles */
+
+.navigation-button-on {
+  color: #766357;
+}
 
 .container {
   flex-direction: column;
@@ -915,14 +922,21 @@ button, input {
 
 .range-toggle {
   position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border: 8px solid #fff;
+  background-color: #ababab;
   border-radius: 50%;
-  background: #ababab;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
-  box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+  text-indent: -1000px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 0 0 rgba(171,171,171,.3);
+  box-shadow: 0 2px 0 0 rgba(171,171,171,.3);
   cursor: pointer;
 }
 
@@ -1204,5 +1218,17 @@ img {
 
 .catalog-price a {
   padding: 3px 18px;
+}
+
+.page-footer-inner {
+  
+  display: block;
+  
+  bottom: 0;
+  padding-top: 35px;
+  padding-bottom: 41px;
+  background: rgba(255,255,255, 0.9);
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  
 }
 
