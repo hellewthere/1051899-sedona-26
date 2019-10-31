@@ -121,7 +121,7 @@ a {
 
 
 .navigation-buttons a:active {
-  color: rgba 0 0 0, 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-buttons a:focus {
@@ -567,7 +567,8 @@ padding-bottom: 0;
     font-weight: bold;
     
     line-height: 1.24;
-    margin: auto; 
+    margin: auto;
+    padding: 0;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -723,9 +724,6 @@ height: 48px;
   box-shadow: 1px 10px 15px 1px grey;
 }
 
-.filter{
-  
-}
 
 .filter-form {
   background-color: #3e749e;
@@ -753,8 +751,7 @@ fieldset {
   padding: 0;
     border: 0;
 
-    display: block;
-    min-inline-size: min-content;
+    display: block; 
 }
 
 .fieldset-box {
