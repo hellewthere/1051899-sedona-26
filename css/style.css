@@ -427,13 +427,13 @@ text-align: center;
   height: 58px;
 }
 
-.blue-button a:hover {
+.blue-button:hover {
   color: #ffffff;
   background-color: #669ec0;
   border: none;
 }
 
-.blue-button a:focus {
+.blue-button:focus {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
   border: none;
@@ -450,13 +450,13 @@ text-align: center;
   border: none;
 }
 
-.search-form-open a:hover {
+.search-form-open:hover {
   color: #ffffff;
   background-color: #604e43;
   border: none;
 }
 
-.search-form-open a:focus {
+.search-form-open:focus {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
   border: none;
